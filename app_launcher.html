@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アプリ起動サンプル</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <p>Twitter Appを起動：<a href="twitter://">twitter://</a><br></p>
+  <p>Twitter Appを起動しTwitterJPのアカウントを表示：<a href="twitter://user?screen_name=TwitterJP">twitter://user?screen_name=TwitterJP</a></p>
+  <p>Dアニメ Appを起動：<a href="intent://#Intent;scheme=danimestore;package=com.nttdocomo.android.danimeapp;end">intent://#Intent;scheme=danimestore;package=com.nttdocomo.android.danimeapp;end</a></p>
+  <p>UA:<div id="UA"></div></p>
+
+  <script>
+    // ページ読み込み時に実行
+    window.onload = function() {
+        $('#UA').text(navigator.userAgent);
+    }
+  </script>
+  
+</body>
+</html>
